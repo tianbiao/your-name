@@ -1,3 +1,21 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 80%;
+
+  th, td {
+    text-align: center;
+    border: 1px solid #CCCCCC;
+  }
+}
+
+input, textarea {
+  border-color: #CCCCCC;
+}

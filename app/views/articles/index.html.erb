@@ -1,0 +1,24 @@
+<h1>Name List</h1>
+
+<%= link_to 'New Name', new_article_path %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Major</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.name %></td>
+      <td><%= article.major %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Destroy', article_path(article),
+                      method: :delete,
+                      data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back', articles_path %>
